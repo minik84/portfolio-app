@@ -1,0 +1,15 @@
+.button {
+  height: 42px;
+  width: 55%;
+  color: #fff;
+  background-color: $button-background-color;
+  font-size: 12px;
+  font-family: $second-font;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  outline: none;
+  &:active {
+    background-color: #fff;
+    color: $button-background-color;
+  }
+}
