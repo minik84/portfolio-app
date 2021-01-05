@@ -1,46 +1,147 @@
 .header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-family: $main-font;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr minmax(200px, 3fr);
+  grid-template-areas:
+    "welcome"
+    "description"
+    "button"
+    "image";
+  min-height: 100vh;
   color: #fff;
   background-color: $main-background-color;
   text-transform: uppercase;
   overflow: hidden;
-  &__welcome {
+  font-family: $main-font;
+  @include responsive("medium") {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr minmax(200px, 3fr);
+    grid-template-areas:
+      "welcome"
+      "description"
+      "button"
+      "image";
+  }
+  @include landscape("small") {
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "welcome image"
+      "description image"
+      "button image";
+  }
+
+  @include portrait("small") {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr minmax(200px, 3fr);
+    grid-template-areas:
+      "welcome"
+      "description"
+      "button"
+      "image";
+  }
+
+  &__welcome-contener {
+    grid-area: welcome;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 20vh;
+  }
+  &__welcome {
     font-size: 40px;
     font-weight: bold;
+    @include responsive("medium") {
+      font-size: 70px;
+    }
+    @include responsive("large") {
+      font-size: 80px;
+    }
+    @include responsive("xlarge") {
+      font-size: 100px;
+    }
+    @include responsive("xxlarge") {
+      font-size: 120px;
+    }
   }
   &__description {
+    grid-area: description;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20vh;
   }
   &__name {
     font-size: 20px;
     font-weight: bold;
+    @include responsive("large") {
+      font-size: 40px;
+    }
+    @include responsive("xlarge") {
+      font-size: 50px;
+    }
+    @include responsive("xxlarge") {
+      font-size: 60px;
+    }
   }
   &__profession {
     font-size: 20px;
     font-weight: normal;
+    @include responsive("large") {
+      font-size: 40px;
+    }
+    @include responsive("xlarge") {
+      font-size: 50px;
+    }
+    @include responsive("xxlarge") {
+      font-size: 60px;
+    }
+  }
+  &__button-container {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive("large") {
+      align-items: flex-start;
+    }
+  }
+  &__image-contener {
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   &__image {
-    position: absolute;
-    bottom: 0;
-    right: -10%;
-    height: 50%;
-    margin-top: 30px;
+    width: 85%;
+    @include portrait("xsmall") {
+      width: 65%;
+    }
+    @include portrait("medium") {
+      width: 57%;
+    }
+    // @include responsive("medium") {
+    //   width: 100%;
+    // }
+    @include responsive("large") {
+      width: 83%;
+    }
   }
 }
 
-.button--header-mobile {
+.button--header {
+  @include responsive("large") {
+    height: 70px;
+    width: 450px;
+    font-size: 25px;
+  }
+  @include responsive("xlarge") {
+    height: 80px;
+    width: 500px;
+    font-size: 30px;
+  }
+  @include responsive("xxlarge") {
+    height: 90px;
+    width: 570px;
+    font-size: 36px;
+  }
 }
