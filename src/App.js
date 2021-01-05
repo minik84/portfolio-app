@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Header from './components/Header/Header.jsx';
+import Header from './components/Header.jsx';
+import Technologies from './components/Technologies.jsx';
 
 import './css/style.css';
 
@@ -10,7 +11,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <div className="technologies"></div>
+      <Technologies />
       <div className="projects"></div>
       <div className="motto"></div>
       <div className="interests"></div>
