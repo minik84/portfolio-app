@@ -4,16 +4,17 @@
   align-items: center;
   justify-content: space-evenly;
   &__image {
-    width: 225px;
+    width: 200px;
   }
   &__title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     padding: 20px 5px;
     text-align: center;
   }
   &__description {
     font-family: $second-font;
+    font-size: 12px;
     font-weight: 300;
     text-align: center;
   }

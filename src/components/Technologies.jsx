@@ -26,18 +26,18 @@ const articleDetails = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis sunt ratione debitis voluptatum ut ea tempore dignissimos labore deleniti ad voluptate maiores, quas provident iusto quibusdam repellat non doloribus.'
   },
   {
-    img: photo4,
-    title: 'Node.JS',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis sunt ratione debitis voluptatum ut ea tempore dignissimos labore deleniti ad voluptate maiores, quas provident iusto quibusdam repellat non doloribus.'
-  },
-  {
     img: photo5,
     title: 'React.JS',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis sunt ratione debitis voluptatum ut ea tempore dignissimos labore deleniti ad voluptate maiores, quas provident iusto quibusdam repellat non doloribus.'
   },
   {
-    img: photo6,
+    img: photo4,
     title: 'React Native',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis sunt ratione debitis voluptatum ut ea tempore dignissimos labore deleniti ad voluptate maiores, quas provident iusto quibusdam repellat non doloribus.'
+  },
+  {
+    img: photo6,
+    title: 'Node.JS',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis sunt ratione debitis voluptatum ut ea tempore dignissimos labore deleniti ad voluptate maiores, quas provident iusto quibusdam repellat non doloribus.'
   },
 ]
