@@ -2,11 +2,13 @@ $main-font: "Saira Condensed", sans-serif;
 $second-font: "Saira", sans-serif;
 
 //Background color
-$main-background-color: #29a6dc;
+// $main-background-color: #29a6dc;
+$main-background-color: #d4d0c4;
 
 //Button
-$button-background-color: #29a6dc;
-
+// $button-background-color: #29a6dc;
+$button-background-color: #45526e;
+$button-background-active-color: #fff;
 //Responsive
 $breakpoints: (
   xsmall: (

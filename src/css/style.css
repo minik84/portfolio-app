@@ -14,7 +14,7 @@
   height: 42px;
   width: 200px;
   color: #fff;
-  background-color: #29a6dc;
+  background-color: #45526e;
   font-size: 12px;
   font-family: "Saira", sans-serif;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 
 .button:active {
   background-color: #fff;
-  color: #29a6dc;
+  color: #45526e;
 }
 
 .header {
@@ -36,7 +36,7 @@
   min-height: 100vh;
   max-height: 100vh;
   color: #fff;
-  background-color: #29a6dc;
+  background-color: #d4d0c4;
   text-transform: uppercase;
   overflow: hidden;
   font-family: "Saira Condensed", sans-serif;
@@ -90,6 +90,7 @@
 .header__welcome {
   font-size: 40px;
   font-weight: bold;
+  color: #444554;
 }
 
 @media (min-width: 800px) {
@@ -133,6 +134,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #444554;
 }
 
 .header__name {
@@ -253,13 +255,18 @@
 
 @media (min-width: 1024px) {
   .header__image {
-    width: 83%;
+    width: 89%;
   }
 }
 
 .button--header {
   -webkit-box-shadow: 0px 0px 10px 1px #fff;
           box-shadow: 0px 0px 10px 1px #fff;
+}
+
+.button--header:active {
+  -webkit-box-shadow: 0px 0px 10px 1px #45526e;
+          box-shadow: 0px 0px 10px 1px #45526e;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {

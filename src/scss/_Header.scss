@@ -46,10 +46,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    // color: #444554;
   }
   &__welcome {
     font-size: 40px;
     font-weight: bold;
+    color: #444554;
     @include responsive("medium") {
       font-size: 70px;
     }
@@ -69,6 +71,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #444554;
   }
   &__name {
     font-size: 20px;
@@ -130,13 +133,17 @@
     //   width: 100%;
     // }
     @include responsive("large") {
-      width: 83%;
+      // width: 83%;
+      width: 89%;
     }
   }
 }
 
 .button--header {
   box-shadow: 0px 0px 10px 1px #fff;
+  &:active {
+    box-shadow: 0px 0px 10px 1px $button-background-color;
+  }
   @include landscape("medium") {
     height: 65px;
     width: 400px;
