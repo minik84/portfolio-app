@@ -255,7 +255,7 @@
 
 @media (min-width: 1024px) {
   .header__image {
-    width: 89%;
+    width: 100%;
   }
 }
 
@@ -827,6 +827,175 @@
 @media (min-width: 1440px) {
   .project--desktop .project__description {
     font-size: 20px;
+  }
+}
+
+.motto {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "Saira", sans-serif;
+  overflow: hidden;
+}
+
+.motto__image {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .motto__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  .motto__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .motto__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.motto__background {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #003f72;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.motto__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 2;
+}
+
+@media (min-width: 568px) {
+  .motto__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .motto__title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .motto__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .motto__title {
+    font-size: 60px;
+  }
+}
+
+.motto__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 18px;
+  z-index: 2;
+  padding: 0 5%;
+}
+
+@media (min-width: 568px) {
+  .motto__description {
+    font-size: 18px;
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 800px) {
+  .motto__description {
+    font-size: 30px;
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .motto__description {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .motto__description {
+    font-size: 48px;
+  }
+}
+
+.motto__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  z-index: 2;
+}
+
+@media (min-width: 568px) {
+  .motto__name {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) {
+  .motto__name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .motto__name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .motto__name {
+    font-size: 24px;
+    padding: 30px 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
