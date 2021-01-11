@@ -1,9 +1,8 @@
 import React from 'react'
 
 import Header from './components/Header.jsx';
-import Technologies from './components/Technologies.jsx';
-
-import './css/style.css';
+import Technologies from './components/Technologies/Technologies.jsx';
+import Projects from './components/Projects/Projects.jsx';
 
 import './css/style.css';
 
@@ -12,7 +11,7 @@ const App = () => {
     <div className="app">
       <Header />
       <Technologies />
-      <div className="projects"></div>
+      <Projects />
       <div className="motto"></div>
       <div className="interests"></div>
       <div className="contact"></div>
