@@ -59,17 +59,8 @@
     @include responsive("small") {
       width: 200px;
     }
-    @include responsive("medium") {
-      width: 270px;
-    }
-    @include responsive("large") {
-      width: 280px;
-    }
-    @include responsive("xlarge") {
-      width: 330px;
-    }
     @include responsive("xxlarge") {
-      width: 375px;
+      width: 290px;
     }
   }
   &__title {
