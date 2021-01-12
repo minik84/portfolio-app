@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import Technologies from './components/Technologies/Technologies.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Motto from './components/Motto/Motto.jsx';
+import Interests from './components/Interests/Interests.jsx';
 
 import './css/style.css';
 
@@ -14,7 +15,7 @@ const App = () => {
       <Technologies />
       <Projects />
       <Motto />
-      <div className="interests"></div>
+      <Interests />
       <div className="contact"></div>
       <footer className="footer"></footer>
     </div >

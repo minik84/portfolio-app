@@ -852,7 +852,8 @@
   height: 100%;
   width: auto;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 568px) and (orientation: landscape) {
@@ -880,6 +881,8 @@
   height: 100vh;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #003f72;
   opacity: 0.5;
   z-index: 1;
@@ -997,5 +1000,95 @@
     font-size: 24px;
     padding: 30px 20%;
   }
+}
+
+.interests {
+  height: 100vh;
+  width: 100%;
+}
+
+.interests__title {
+  height: 15vh;
+  line-height: 15vh;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.interests__images-contener {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1px;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  .interests__images-contener {
+    -ms-grid-columns: (minmax(390px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .interests__images-contener {
+    -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
+  .interests__images-contener {
+    -ms-grid-columns: (minmax(650px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+  }
+}
+
+.interests__image-contener {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .interests__image-contener {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .interests__image-contener {
+    height: 50vh;
+  }
+}
+
+.interests__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.interests__image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.interests__image-background:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #ff4f2c;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
